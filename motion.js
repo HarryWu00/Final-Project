@@ -26,7 +26,7 @@ exports.time = function(d,v){
     return t;
 }
 
-exports.time = function(){
+exports.time = function(Vf,Vi,a){
     let t = (Vf-Vi)/a;
     returm t;
 
@@ -34,8 +34,11 @@ exports.time = function(){
 }
 
 
-exports.acceleration = function(){}
+exports.acceleration = function(Vf,Vi,t){
+    let a = (Vf-Vi)/t;
+    return a;
+}
 
 
 
-missing second velocity, second time, and acceleration
+acceleration
