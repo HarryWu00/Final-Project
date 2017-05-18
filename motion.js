@@ -30,9 +30,7 @@ exports.time = function(Vf,Vi,a){
     let t = (Vf-Vi)/a;
     returm t;
 
-    }
 }
-
 
 exports.acceleration = function(Vf,Vi,t){
     let a = (Vf-Vi)/t;

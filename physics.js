@@ -9,12 +9,21 @@ const terminal = readline.createInterface({
 });
 
 terminal.question("What type of equation are you looking for?",function(str){
-    if motion
-      +  which variable are you solving for? (options: d, v, t, or a)
-    -  else if energy
-      +  which variable are you solving for? (options: ke, m, or v)
-    -  else
-      +  I'm sorry I don't know how to calculate that yet...
+
+
+    else if (str1 == "v"){
+        end();
+    }
+    else if (str1 == "t"){
+        end();
+    }
+    else if (str1 == "a"){
+        end();
+    }
+    else{
+        end();
+    }
+
     //you will configure your series of questions inside here.
 
 
