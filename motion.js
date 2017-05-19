@@ -36,7 +36,3 @@ exports.acceleration = function(Vf,Vi,t){
     let a = (Vf-Vi)/t;
     return a;
 }
-
-
-
-acceleration
