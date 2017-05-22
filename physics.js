@@ -27,19 +27,24 @@ function convertToArray(strcma){
 terminal.question("What type of equation are you looking for?",function(str){
   str.toLowerCase();
   if(str == "motion"){
-    terminal.question("What are you trying to find? (Type the word out)",function(str){
+    terminal.question("What are you trying to find?",function(str){
       str.toLowerCase();
-      if(str == "distance"){
-
+      if(str == "d"){
+          printOptions();
+          terminal.question("Type your list now.", function(strcma){
+            strcma = convertToArray(strcma);
+            if(){}
+            else{}
+          });
       }
       else if (str1 == "v"){
-          end();
+
       }
       else if (str1 == "t"){
-          end();
+
       }
       else if (str1 == "a"){
-          end();
+          
       }
       else{
           end();
@@ -47,29 +52,29 @@ terminal.question("What type of equation are you looking for?",function(str){
     });
   }
   else if(str == "energy"){
-    terminal.question("What are you trying to find? (Type the word out)",function(str){
+    terminal.question("What are you trying to find?",function(str){
       str.toLowerCase();
       if(str == "kinetic energy"){
-        terminal.printOptions();
+        printOptions();
         terminal.question("Type your list now.", function(strcma){
-          convertToArray(strcma);
+          strcma = convertToArray(strcma);
            console.log(energy.kineticEnergy(strcma[1],strcma[4]));
           end();
         });
       }
       else if(str == "mass"){
-        terminal.printOptions();
+        printOptions();
         terminal.question("Type your list now.",function(strcma){
-          convertToArray(strcma);
-          return energy.mass(strcma[5],strcma[1]);
+          strcma = convertToArray(strcma);
+           console.log(energy.mass(strcma[5],strcma[1]));
           end();
         });
       }
       else if(str =="velocity"){
-        terminal.printOptions();
+        printOptions();
         terminal.question("Type your list now.",function(strcma){
-          convertToArray(strcma);
-          return energy.v(strcma[5],strcma[4]);
+          strcma = convertToArray(strcma);
+           console.log(energy.v(strcma[5],strcma[4]));
           end();
         });
       }
